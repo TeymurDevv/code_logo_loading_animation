@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.code-logo{
+    border-radius: 20px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 16%;
+    left: 16%;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    animation: zoom 2s infinite linear;
+    
+}
+
+.general-container{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    
+}
+.title p{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-top: 50%;
+    margin-left: 45%;
+    transform: translate(-50%,-50%);
+    display: block;
+    animation: text-code 2s infinite;
+    animation-direction: alternate;
+    left: 25px;
+    position: absolute;
+}
+.title p>span{
+    display: block;
+}
+@keyframes text-code {
+    0%{
+        opacity: 1;
+
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Define the animation keyframes for the gradient transition */
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+  .img img{
+    position: absolute;
+    top: 63px;
+    left: 0;
+    height: 50;
+    width: 50px;
+    display: inline-block;
+  }
+
